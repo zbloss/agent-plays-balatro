@@ -1,30 +1,23 @@
 [project]
-name = "agent-plays-balatro"
+name = "agent-plays_balatro"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-    "docling>=2.34.0",
-    "helium>=5.1.1",
-    "langchain-docling>=0.2.0",
-    "pillow>=11.2.1",
-    "pyautogui>=0.9.54",
-    "pydantic>=2.11.5",
-    "pydantic-settings>=2.9.1",
-    "ruff>=0.11.11",
-    "selenium>=4.33.0",
-    "smolagents[litellm]>=1.16.1",
-    "torch>=2.7.0",
-    "torchvision>=0.22.0",
-    "transformers>=4.42.4",
+description = "Agents to play the game Balatro."
+authors = [
+    {name = "Jules", email = "no-reply@google.com"},
 ]
+readme = "README.md"
+requires-python = "^3.9"
+dependencies = [
+    "pydantic^2.0",
+    "google-adk==*",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest^7.0",
+]
+
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
-
-[tool.setuptools]
-package-dir = {"" = "src"}
-
-[tool.setuptools.packages.find]
-where = ["src"]
+backend-path = ["."]
