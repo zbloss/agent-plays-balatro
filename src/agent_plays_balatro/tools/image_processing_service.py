@@ -10,7 +10,7 @@ class ImageProcessingService:
             "score_area": {"x": 700, "y": 50, "width": 100, "height": 50},
             "deck_info_area": {"x": 50, "y": 50, "width": 150, "height": 50},
             "hands_left_area": {"x": 700, "y": 100, "width": 100, "height": 30},
-            "discards_left_area": {"x": 700, "y": 130, "width": 100, "height": 30}
+            "discards_left_area": {"x": 700, "y": 130, "width": 100, "height": 30},
         }
 
     def extract_text_from_region(self, image_data, region_name):

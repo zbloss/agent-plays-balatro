@@ -1,7 +1,6 @@
-from smolagents import CodeAgent, LiteLLMModel
 from balatro_agent.tools.mouse import MouseTool
 from balatro_agent.config import Config
-
+from autogen_agentchat.agents import AssistantAgent
 
 config = Config()
 
