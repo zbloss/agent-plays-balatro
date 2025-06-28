@@ -4,7 +4,7 @@ import cv2
 from typing import List, Optional, Dict, Any
 from pydantic import BaseModel, Field
 from autogen_agentchat.agents import AssistantAgent
-from autogen_agentchat.conditions import TextMentionsTermination
+from autogen_agentchat.conditions import TextMentionTermination
 from autogen_agentchat.teams import RoundRobinGroupChat
 from autogen_core.models import UserMessage, SystemMessage
 
